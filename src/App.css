@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+:root{
+  margin:0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#a5a5a5;
+}
+#calculator{
+  width:400px;
+  border: 5px solid #9B2335;
+  padding: 5px;
+  background-color:black;
+  position:relative;
+  
+  
+}
+#digital-display{ 
+  color:white;
+  min-height:90px;
+  width:99%;
+  font-size:18px;
+  font-weight:400;
+  text-align:right;
+  font-family:Digital;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+   
+ }
+ #input-text{
+  min-height:35px;
+  width:99%;
+  margin:2px;
+  font-size:22px;
+  padding-right:5px;
+  color: orange;
+  text-align: right;
+  vertical-align: text-top;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+#display{
+  height:45px;
+  width:99%;
+  margin:2px;
+  padding-right:5px;
+  font-size:38px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color:white;
+}
+button{
+  width:100px;
+  border-radius:0;
+  height:70px;
+  background: linear-gradient(180deg, #505050 0%, #3e3e3e 74%);
+  border:1px solid black;
+  color:white;
+  font-size:20px;
+  font-weight:400;
+}
+button:hover{
+  border:3px outset #a3a3a3;
+  font-weight:500;
+  color:black;
+}
+.big{
+  width:200px;
+}
+#clear{
+  background:linear-gradient(180deg, #ed4343 0%, #ea3535 74%);
+}
+.operator{
+  background: linear-gradient(180deg, #6D6D6D 0%, #5A5A5A 74%);
+}
+.equals{
+  position:absolute;
+  height:140px;
+  background: linear-gradient(180deg, #1a6f9a 0%, #1a658a 74%);
+}
